@@ -14,3 +14,4 @@ RUN cd /home/docker && git clone https://github.com/flutter/flutter.git
 ENV PATH="/home/docker/flutter/bin:${PATH}"
 RUN flutter channel stable
 RUN flutter --version
+WORKDIR /home/docker/app
